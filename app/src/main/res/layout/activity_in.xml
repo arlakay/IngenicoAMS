@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity" >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="24dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Field Staff:"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                    <Spinner
+                        android:id="@+id/spin_from_fs_staff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/spinner_style"
+                        android:spinnerMode="dropdown" />
+
+                    <Button
+                        android:id="@+id/in_customer_scan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:text="scan"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:background="@drawable/button_rounded_outline"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_hasil_staff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:background="@drawable/textfield_style"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand:"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spin_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/spinner_style"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Serial Number:"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txt_serial_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/textfield_style"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/button_rounded_outline"
+                    android:text="SCAN"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Customer:"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/spin_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/spinner_style"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/button_rounded_outline"
+                android:text="NEXT"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

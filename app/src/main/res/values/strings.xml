@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ingenico Assets Management</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="turn_on_flashlight">Turn on Flashlight</string>
+    <string name="turn_off_flashlight">Turn off Flashlight</string>
+
+</resources>

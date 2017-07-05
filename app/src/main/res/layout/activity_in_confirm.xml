@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="24dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Warehouse Staff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_staff_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textfield_style"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brand"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textfield_style"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Serial Number"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_serial_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textfield_style"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textfield_style"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="IN"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Field Service Staff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_fs_staff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/textfield_style"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="-"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    android:background="@drawable/button_rounded_outline"
+                    android:text="SAVE"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_collapseMode="pin" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="192dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logoingenico"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:id="@+id/txt_versioning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="version"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_gudang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                <ImageButton
+                    android:id="@+id/btn_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_in"
+                    android:scaleType="centerInside"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:id="@+id/btn_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_out"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="IN"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OUT"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="(FS TO WH)"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="(WH TO FS)"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                <ImageButton
+                    android:id="@+id/btn_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_history"
+                    android:scaleType="centerInside"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HISTORY"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lapangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                <ImageButton
+                    android:id="@+id/btn_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_in"
+                    android:scaleType="centerInside"
+                    android:background="@null"/>
+
+                <ImageButton
+                    android:id="@+id/btn_field_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:src="@drawable/ic_out"
+                    android:scaleType="fitCenter"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FIELD"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HISTORY"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

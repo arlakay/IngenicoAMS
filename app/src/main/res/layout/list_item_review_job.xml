@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:background="@color/zxing_status_text"
+    android:elevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/txt_history_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="16sp"
+                android:gravity="end|right"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/txt_history_brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:textSize="16sp"
+                android:textAlignment="textEnd"
+                android:gravity="end|right"
+                android:layout_gravity="end|right"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/lbl_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FROM : "/>
+
+            <TextView
+                android:id="@+id/txt_history_staff_code_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lbl_from"
+                android:text="-"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:gravity="start"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/lbl_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TO : "/>
+
+            <TextView
+                android:id="@+id/txt_history_staff_code_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lbl_to"
+                android:text="-"
+                android:textSize="16sp"
+                android:textAlignment="textStart"
+                android:gravity="start"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_sn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="S/N : "/>
+
+            <TextView
+                android:id="@+id/txt_history_serial_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lbl_sn"
+                android:text="Serial Number"
+                android:textSize="16sp"
+                android:gravity="start|left"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

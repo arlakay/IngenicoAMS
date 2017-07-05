@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brand_edc">
+        <item>INGENICO</item>
+        <item>VERIFONE</item>
+    </string-array>
+</resources>

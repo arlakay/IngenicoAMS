@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1043887809733",
+    "firebase_url": "https://ingenicosms.firebaseio.com",
+    "project_id": "ingenicosms",
+    "storage_bucket": "ingenicosms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043887809733:android:bf51960c25179467",
+        "android_client_info": {
+          "package_name": "com.mybottle.ingenicoversion2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043887809733-lda0ruklghvoba49br400mrnctv12ghv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mybottle.ingenicoversion2",
+            "certificate_hash": "d58a3879d697ce99b360b30c01770c85a307f4a7"
+          }
+        },
+        {
+          "client_id": "1043887809733-r0btf5h2vsgcnihh8q9ng9903tnrlt30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWWSTogXwzpw6gTVKZUsAry3AR1hWIfIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043887809733-r0btf5h2vsgcnihh8q9ng9903tnrlt30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043887809733:android:71e549516f211cf0",
+        "android_client_info": {
+          "package_name": "id.co.octolink.erd.ilm.ingenicoassetsmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043887809733-5kot6d6drt3do5g2ukqfcht4un0m43jp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.octolink.erd.ilm.ingenicoassetsmanagement",
+            "certificate_hash": "d58a3879d697ce99b360b30c01770c85a307f4a7"
+          }
+        },
+        {
+          "client_id": "1043887809733-r0btf5h2vsgcnihh8q9ng9903tnrlt30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWWSTogXwzpw6gTVKZUsAry3AR1hWIfIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043887809733-r0btf5h2vsgcnihh8q9ng9903tnrlt30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

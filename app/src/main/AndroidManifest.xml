@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.co.octolink.erd.ilm.ingenicoassetsmanagement">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="Assets Management System"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.in.InActivity"
+            android:label="IN"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.history.gudang.HistoryScrollableTabsActivity"
+            android:label="HISTORY GUDANG"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.history.field.HistoryFieldScrollableTabsActivity"
+            android:label="HISTORY FIELD"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.out.OutActivity"
+            android:label="OUT"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".ui.in.InConfirmActivity"
+            android:label="IN Confirmation"
+            android:parentActivityName=".ui.in.InActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.in.InActivity" />
+        </activity>
+        <activity
+            android:name=".ui.out.OutConfirmActivity"
+            android:label="OUT Confirmation"
+            android:parentActivityName=".ui.out.OutActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.out.OutActivity" />
+        </activity>
+        <activity
+            android:name=".ui.field.FieldActivity"
+            android:label="Field"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.field.FieldConfirmActivity"
+            android:label="Field Confirmation"
+            android:parentActivityName=".ui.field.FieldActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.field.FieldActivity" />
+        </activity>
+        <activity android:name=".ui.in.customerscan.StaffActivity" />
+        <activity
+            android:name=".ui.in.customerscan.InCustomerScanActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".utility.CustomScannerActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.out.scanstaff.StaffOutScanActivity"></activity>
+    </application>
+
+</manifest>
